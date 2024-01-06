@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Portfolio Website</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/2a9007d21e.js" crossorigin="anonymous"></script>
+    </head>
+    <title>Project Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="myimg/gugan_logo-.png" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p>Programmer</p>
+                    <h1>Hi, I'm <span> Gugan </span><br>from India</h1>
+                </div>
+            </div>
+        </div>
+        <!-------------about----------------->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="myimg/image1.png">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1><br>
+                        <p id="para-1">I'm a curious person who loves to learn new thing about technologies and devices. I love to explore alone, I'm an introvert but I spend most of times with mobile phone. My habits are reading, watching anime, drawing, cooking new recepies. I do motivate myself to complete my works and mostly avoid unnecessary conversation. </p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Python</span><br>Data Science and machine learning</li>
+                                <li><span>Web Development</span><br>Designing Web/App interface</li>
+                                <li><span>Microsoft Office</span><br>Excel, Word, Power-point</li>
+                                <li><span>SQL</span><br>Manipulating given Dataset</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2021 - Current</span><br>Practicing and Developing my skills</li>
+                                <li><span>2021 - 2022</span><br>Developing my Web Developing skills</li>
+                                <li><span>2019 - 2023</span><br>Microsoft applications</li>
+                                <li><span>2021 - 2022</span><br>SQL, DBMS</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2021 - Current</span><br>B.Tech CSE (<span>Data Science</span>) from Vels University Chennai</li>
+                                <li><span>2015 - 2021</span><br> Secondary School from Sishya Tiruvannamalai</li>
+                                <li><span>2007 - 2015</span><br>SRVM Vilvarani</li>
+                            </ul>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--------------projects------------>
+        <div id="projects">
+            <div class="container">
+                <h1 class="sub-title">Projects</h1>
+                <div class="project-list">
+                    <div>
+                        <i class="fa-solid fa-blog"></i><br>
+                        <h2>Content Writing</h2><br>
+                        <p>I did content writing in intershala for 'Marpu foundation' [an NGO foundation]
+                             as an intern for 2 weeks. I consider it as a project as well.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-python"></i><br>
+                        <h2>Python Programming</h2><br>
+                        <p>I did some projects with the help of python programming language, 
+                            as an intern in 'INTERNPE' like, digital clock, tiktactoe gameplay.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-code"></i><br>
+                        <h2>Web Desigining</h2><br>
+                        <p>I work out html, css and javascript by the knowledge I learn from Google,
+                             Youtube and SimpliLearn (course application). This Portfolio is the masterpiece </p>
+                        <a href="#">Learn more</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--------------portfolio------------------->
+        <div id="portfolio">
+            <div class="container">
+                <div class="sub-title">My Work</div>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/work-1.png"><br>
+                        <div class="layer">
+                            <h3>Web Designing</h3><br>
+                            <p>I learnt Front-end programming languages from great learning and 
+                                Youtube. This Website is a masterpiece, which you are looking 
+                                right now.
+                            </p><br>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/Untitled design.png"><br>
+                        <div class="layer">
+                            <h3>Python Programming</h3><br>
+                            <p>By using python programming I created some projects like Digital clock,
+                                Tik Tak Toe game play model, snake Game and more.
+                            </p><br>
+                            <a href="https://www.linkedin.com/posts/gugan-r-92b4b2261_internpe-education-activity-7137739506312507392-TVI4?utm_source=share&utm_medium=member_android"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="myimg/Untitled design (3).png"><br>
+                        <div class="layer">
+                            <h3>Machine Learning models</h3><br>
+                            <p>By using Google colab notebook, I saved some model prediction test
+                                and saved them in my Google Drive.
+                            </p><br>
+                            <a href="https://colab.research.google.com/drive/11yMRJ6fYvaEo0V55vaYAsE6C19cwexS9#scrollTo=TbZkOBW1fgN_"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">See More</a>
+            </div>
+        </div>
+        <!---------------------contact---------------------------->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i>guganraguraman@gmail.com</p>
+                        <p><i class="fa-solid fa-phone-volume"></i>+91 9361894134</p>
+                        <div class="social-icons">
+                            <a href="https://www.instagram.com/invites/contact/?i=1iu9qm2dhykyl&utm_content=n12622u"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/gugan-r-92b4b2261?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                        <a href="https://docs.google.com/document/d/1WExKia8InIFNPi8lHTqwp0CKUtIS9JtmAXPMpmRW1DY/edit?usp=drivesdk" download class="btn btn2">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright © Gugan.R . Made with <i class="fa-solid fa-heart"></i> by Programming Front End </p>
+            </div>
+        </div>
+
+
+
+        <script src="/control.js"></script>
+        <script>
+            var sidemenu = document.getElementById("sidemenu")
+            function openmenu(){
+                sidemenu.style.right = "0";
+            }
+            function closemenu(){
+                sidemenu.style.right = "-200px";
+            }
+        </script>
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbz89Ed4S0UQkdDBYh8YcemHQbUTjSjd-l_94SkAtPlAl5-qGQwd7QXEHDqT_9mqFqCT/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById("msg")
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully!"
+                    setTimeout(function(){
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+    </body>
+</html>
