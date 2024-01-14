@@ -14,7 +14,7 @@
         <div id="header">
             <div class="container">
                 <nav>
-                    <img src="myimg/gugan_logo-.png" class="logo">
+                    <img src="myimg/gugan_logo-.png" alt="screenshot" class="logo">
                     <ul id="sidemenu">
                         <li><a href="#header">Home</a></li>
                         <li><a href="#about">About</a></li>
@@ -36,7 +36,7 @@
             <div class="container">
                 <div class="row">
                     <div class="about-col-1">
-                        <img src="myimg/image1.png">
+                        <img src="myimg/image1.png", alt="screenshot">
                     </div>
                     <div class="about-col-2">
                         <h1 class="sub-title">About Me</h1><br>
@@ -110,7 +110,7 @@
                 <div class="sub-title">My Work</div>
                 <div class="work-list">
                     <div class="work">
-                        <img src="images/work-1.png"><br>
+                        <img src="images/work-1.png" alt="screenshot"><br>
                         <div class="layer">
                             <h3>Web Designing</h3><br>
                             <p>I learnt Front-end programming languages from great learning and 
@@ -121,7 +121,7 @@
                         </div>
                     </div>
                     <div class="work">
-                        <img src="images/Untitled design.png"><br>
+                        <img src="images/Untitled design.png" alt="screenshot"><br>
                         <div class="layer">
                             <h3>Python Programming</h3><br>
                             <p>By using python programming I created some projects like Digital clock,
@@ -131,7 +131,7 @@
                         </div>
                     </div>
                     <div class="work">
-                        <img src="myimg/Untitled design (3).png"><br>
+                        <img src="myimg/Untitled design (3).png" alt="screenshot"><br>
                         <div class="layer">
                             <h3>Machine Learning models</h3><br>
                             <p>By using Google colab notebook, I saved some model prediction test
@@ -176,7 +176,20 @@
 
 
 
-        <script src="/control.js"></script>
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
         <script>
             var sidemenu = document.getElementById("sidemenu")
             function openmenu(){
